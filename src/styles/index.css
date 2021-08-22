@@ -2,12 +2,16 @@
 
 :root {
   font-size: 10px;
+  --main-bg-color: #1e6262;
+  --element-bg-color: #2d767f;
+  --accent-color: #b4f1f1;
+  --text-color: #ecfffb;
 }
 
 html {
   margin: 0;
   box-sizing: border-box;
-  background-color: #282c34;
+  background-color: var(--main-bg-color);
 }
 
 /* General Setup */
@@ -18,7 +22,7 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  color: white;
+  color: var(--text-color);
   line-height: 1.6;
   text-decoration: none !important;
   border: none !important;
@@ -33,7 +37,8 @@ h1, h2 , h3, h4, h5 {
   font-weight: 600;
   font-family: monospace,-apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--accent-color);
 }
 
 h1 {
@@ -49,12 +54,11 @@ h3 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 a {
-  font-size: 1.5rem;
-  color: #61dafb;
+  color: var(--accent-color);
 }
 
 code {
