@@ -1,5 +1,5 @@
-import React from 'react';
 import '../styles/ExpenseItem.css';
+import ItemContainer from './ItemContainer';
 
 // markup
 const Total = ({ expenses, currency }) => {
@@ -9,13 +9,13 @@ const Total = ({ expenses, currency }) => {
   );
 
   return (
-    <div className="expense-container">
+    <ItemContainer>
       <h3>Total</h3>
       <div className="expense-amount">
         <span>{currency}</span>
         <span>{expenseTotal.toString()}</span>
       </div>
-    </div>
+    </ItemContainer>
   );
 };
 

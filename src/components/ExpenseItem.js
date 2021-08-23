@@ -1,6 +1,6 @@
-import React from 'react';
 import '../styles/ExpenseItem.css';
 import moment from 'moment';
+import ItemContainer from './ItemContainer';
 
 // markup
 const ExpenseItem = ({ expense }) => {
@@ -8,7 +8,7 @@ const ExpenseItem = ({ expense }) => {
   const day = moment(expense.date).format('DD').slice(0, 3).toUpperCase();
 
   return (
-    <div className="expense-container">
+    <ItemContainer>
       <div className="expense-date">
         <span>{day}</span>
         <span>{month}</span>
@@ -21,7 +21,7 @@ const ExpenseItem = ({ expense }) => {
         <span>{expense.amount.currency}</span>
         <span>{expense.amount.amount}</span>
       </div>
-    </div>
+    </ItemContainer>
   );
 };
 

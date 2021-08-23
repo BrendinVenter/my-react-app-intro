@@ -1,7 +1,9 @@
 import './styles/App.css';
 import ExpenseItem from './components/ExpenseItem';
 import Total from './components/Total';
+import AppLayout from './components/AppLayout';
 
+// Data
 const expenses = [
   {
     id: 1,
@@ -41,14 +43,15 @@ const expenses = [
   },
 ];
 
+// Markup
 function App() {
   return (
-    <div className="App">
+    <AppLayout className="App">
       {expenses.map((expense) => (
         <ExpenseItem expense={expense} key={expense.id} />
       ))}
       <Total expenses={expenses} currency={expenses[0].amount.currency} />
-    </div>
+    </AppLayout>
   );
 }
 
