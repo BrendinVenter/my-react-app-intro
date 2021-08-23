@@ -13,8 +13,9 @@
 }
 
 .expense-date {
+    font-family: monospace;
     font-size: 2em;
-    font-weight: 700;
+font-weight: bold;
     display: flex;
     flex-direction: column;
 
@@ -27,8 +28,9 @@
 }
 
 .expense-amount {
+    font-family: monospace;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: bold;
     /*display: flex;*/
     /*flex-direction: column;*/
 
@@ -49,8 +51,6 @@
 }
 
 .expense-title {
-    /*font-size: 3em;*/
-    font-weight: 700;
     color: var(--accent-color);
 }
 

@@ -1,13 +1,14 @@
 import './styles/App.css';
-import ExpenseItem from './components/ExpenseItem';
-import Total from './components/Total';
-import AppLayout from './components/AppLayout';
+import ExpenseItem from './components/expenses/ExpenseItem';
+import Total from './components/expenses/Total';
+import AppLayout from './components/ui/AppLayout';
+import ExpenseForm from './components/inputs/ExpenseForm';
 
 // Data
 const expenses = [
   {
     id: 1,
-    date: '20200727',
+    date: '2021-07-26',
     description: {
       title: 'Online Course',
       description: 'Bought an online course to learn React.',
@@ -47,6 +48,7 @@ const expenses = [
 function App() {
   return (
     <AppLayout className="App">
+      <ExpenseForm />
       {expenses.map((expense) => (
         <ExpenseItem expense={expense} key={expense.id} />
       ))}

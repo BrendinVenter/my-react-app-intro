@@ -30,13 +30,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
+  padding: 3em;
 }
 
 /* Global Colors */
 
 /* Typography */
 
-h1, h2 , h3, h4, h5 {
+
+h2 , h3, h4, h5 {
   line-height: 1.2rem;
   font-weight: 600;
   font-family: monospace,-apple-system, BlinkMacSystemFont, sans-serif;
@@ -46,7 +49,13 @@ h1, h2 , h3, h4, h5 {
 }
 
 h1 {
-font-size: 5rem;
+  font-size: 5rem;
+  line-height: 1.2rem;
+  color: var(--main-bg-color);
+  font-weight: 600;
+  font-family: monospace,-apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h2 {
@@ -68,5 +77,42 @@ a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+
+/*  Forms & Inputs */
+
+label {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-family: monospace;
+  padding-right: 0.5em;
+}
+
+input {
+  background: var(--accent-color);
+  border: 0;
+  border-radius: 0.2em;
+  outline: none;
+  font-size: 1.8em;
+  padding: 0.2em 0.5em;
+  color: var(--main-bg-color);
+}
+
+
+
+/* Buttons  */
+
+button {
+  text-decoration: none;
+  border: none;
+  border-radius: 0.2em;
+  padding: 0.75em 1.25em;
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.8em;
 }
 
