@@ -14,23 +14,27 @@
     -webkit-box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.1);
 }
 
+.expense-form__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Classes */
 .form__controls {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
     gap: 1em;
 
     padding: 2em 0;
 }
 
 .form__actions {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 1em 0em;
-    padding: 1em 0em;
+
+
+
 }
 
 

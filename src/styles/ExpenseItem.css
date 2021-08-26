@@ -19,6 +19,7 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
 
+
     /* Styles */
     background-color: white;
     color: var(--main-bg-color);
